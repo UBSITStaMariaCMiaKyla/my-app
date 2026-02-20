@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-user-interaction.component',
+  selector: 'app-user-interaction',
+  standalone: true,
   imports: [],
   templateUrl: './user-interaction.component.html',
-  styleUrl: './user-interaction.component.css',
+  styleUrl: './user-interaction.component.css'
 })
 export class UserInteractionComponent {
-
   message: string = 'Click the button!';
   clickCount: number = 0;
 
@@ -24,5 +24,4 @@ export class UserInteractionComponent {
     const target = event.target as HTMLInputElement;
     console.log('Input changed:', target.value);
   }
-
 }

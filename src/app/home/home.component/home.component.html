@@ -1,8 +1,6 @@
-export class HomeComponent {
-
-  appTitle: string = 'Welcome to Angular 20';
-  userImageUrl: string = 'assets/images/user-avatar.png';
-  isHighlighted: boolean = true;
-  currentDate: Date = new Date();
-
-}
+<div class="card">
+  <h1>{{ appTitle }}</h1>
+  <div class="avatar">🐥</div>
+  <p [class.highlighted]="isHighlighted">This text is highlighted!</p>
+  <p class="date">Today's date: {{ currentDate | date }}</p>
+</div>

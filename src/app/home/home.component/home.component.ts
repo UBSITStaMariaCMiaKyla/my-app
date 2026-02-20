@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home.component',
-  imports: [],
+  selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
   appTitle: string = 'Welcome to Angular 20';
   userImageUrl: string = 'assets/images/user-avatar.png';
   isHighlighted: boolean = true;
   currentDate: Date = new Date();
-
 }
